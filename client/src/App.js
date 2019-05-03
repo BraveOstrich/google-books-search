@@ -1,21 +1,18 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Jumbotron from "./components/Jumbotron/Jumbotron";
-import Search from "./components/Search/Search";
-import Results from "./components/Results/Results";
+import Navbar from "./components/Navbar/index";
+import Jumbotron from "./components/Jumbotron/index";
+import Search from "./components/Search/index";
+import Results from "./components/Results/index";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Navbar />
+        <Jumbotron />
+        <Search />
+        <Results />
       </div>
     );
   }
